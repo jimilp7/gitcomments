@@ -2,13 +2,19 @@
 
 A data-driven tool that uses LLM to analyze pull request comments from popular open-source repositories, extract meaningful insights, and visualize patterns in code review feedback.
 
+View the notebook here: [PR Comment Analysis Notebook](https://github.com/jimilp7/gitcomments/blob/main/pr_comment_section.ipynb)
+
 ## Features
 
 - Fetches PR comments from GitHub repositories using GitHub API
-- Uses LLM to extract structured insights from review comments:
-  - Issues identified
-  - Code changes (before/after)
-  - Lessons learned
+- Uses LLM to extract structured insights from review comments. These insights can be used for Model Training, Fine-Tuning, and other purposes. Insights are structured in a CSV format with the following columns:
+  - Issue
+  - Code Before
+  - Code After
+  - Lesson
+  - Source
+  - Issue Tags
+  - Lesson Tags
 - Generates comprehensive visualizations:
   - Word clouds of common issues and lessons
   - Treemaps showing issue and lesson hierarchies
