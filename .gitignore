@@ -23,12 +23,17 @@ wheels/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
 # IDEs
 .idea/
 .vscode/
 *.swp
 *.swo
+
+# macOS
+.DS_Store
 
 # Project specific
 /data
